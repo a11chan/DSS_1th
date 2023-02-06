@@ -75,7 +75,9 @@ public class ListSample {
     list.add("A");
     list.add("B");
     list.add("C");
-    String[] tempArray = new String[4];
+    String[] tempArray = new String[2];
+    // 책 내용에 따르면 null, null 로 나와야 하는데 "A", "B", "C" 정상출력
+    // 자바의 정석과 비교 필
     String[] strList = list.toArray(tempArray);
     for(String temp:strList) {
       System.out.println(temp);
